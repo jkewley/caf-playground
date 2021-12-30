@@ -25,6 +25,8 @@ module "enterprise_scale" {
 
   deploy_demo_landing_zones = true
 
+  deploy_connectivity_resources = true
+  subscription_id_connectivity  = "2d479f58-3999-4c7d-ba51-737f6b8032b1"
   custom_landing_zones = {
     "${var.root_id}-online-example-1" = {
       display_name               = "${upper(var.root_id)} Online Example 1"
